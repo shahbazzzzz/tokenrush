@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --telegram-bg-color: #1a1a2e;
+    --telegram-text-color: #ffffff;
+    --telegram-hint-color: #999999;
+    --telegram-link-color: #4ecdc4;
+    --telegram-button-color: #ff6b6b;
+    --telegram-button-text-color: #ffffff;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-midnight text-white;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    overscroll-behavior: none;
+    touch-action: pan-y;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-turquoise rounded-full;
+  }
+
+  /* Telegram Web App specific styles */
+  .tg-viewport {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: var(--tg-viewport-stable-height, 100vh);
+    pointer-events: none;
+    transition: all 0.2s ease;
+  }
+
+  .tg-viewport > * {
+    pointer-events: auto;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-coral text-white rounded-xl font-bold shadow-lg;
+    @apply hover:bg-opacity-90 active:scale-95 transition-all duration-200;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-turquoise text-midnight rounded-xl font-bold shadow-lg;
+    @apply hover:bg-opacity-90 active:scale-95 transition-all duration-200;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .game-card {
+    @apply bg-gradient-to-br from-slate to-accent rounded-2xl p-6;
+    @apply border border-turquoise/20 shadow-xl;
+    @apply hover:shadow-2xl hover:scale-105 transition-all duration-300;
+  }
+
+  .coin-display {
+    @apply inline-flex items-center gap-2 px-4 py-2;
+    @apply bg-gradient-to-r from-sunshine/20 to-sunshine/10 rounded-full;
+    @apply border border-sunshine/40 shadow-lg;
+  }
+
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-md;
+    @apply border border-white/10;
+  }
+}
+
+@layer utilities {
+  .animate-float-delay-1 {
+    animation-delay: 0.1s;
+  }
+
+  .animate-float-delay-2 {
+    animation-delay: 0.2s;
+  }
+
+  .animate-float-delay-3 {
+    animation-delay: 0.3s;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-coral to-turquoise bg-clip-text text-transparent;
+  }
+
+  .bg-game-gradient {
+    @apply bg-gradient-to-br from-midnight via-slate to-accent;
+  }
+}

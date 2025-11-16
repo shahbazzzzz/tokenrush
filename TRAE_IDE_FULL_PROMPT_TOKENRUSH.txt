@@ -1,0 +1,127 @@
+# TRAE IDE SOLO MODE PROMPT (FULLY WRITTEN FOR YOU)
+
+---
+
+**Project Name:** TokenRush: Telegram Mini App
+
+---
+
+**Project Overview:**
+Build a play-to-earn Telegram Mini App called "TokenRush" where users play free arcade games, earn tokens, and instantly withdraw their rewards. The app should be simple to use and highly engaging, modeled on successful case studies.
+
+---
+
+**Game Description:**
+
+"TokenRush" contains four exciting mini-games:
+1. **CrashMaster**: Bet, wait, and cash out before the graph crashes!
+2. **MineQuest**: Reveal tiles, avoid hidden mines, and earn tokens for each successful turn.
+3. **DiceHero**: Roll the dice and win rewards with lucky numbers.
+4. **LimboLeap**: Guess the multiplier – jump as high as you dare for bigger coins!
+
+Players can earn tokens through gameplay, daily login bonuses, achievements, and opt-in Monetag rewarded ads. Tokens are redeemable for weekly prize draws and instant withdrawals.
+
+---
+
+**Key Features:**
+- Telegram authentication and profile
+- Token-based in-game economy
+- Daily login rewards, achievements, airdrops for top users
+- Monetag ad integration for voluntary ad rewards
+- Game selection screen with animated game icons
+- Global leaderboard and friend referral system
+- Withdraw/redeem tokens as entries into weekly prize draws or virtual gift cards
+- Persistent data for user stats and rewards
+
+---
+
+**Technical Details:**
+- Frontend: React with Telegram Web App SDK
+- Backend: Node.js (Express)/Supabase
+- Database: Supabase PostgreSQL
+- Bot Framework: Telegraf (Node.js)
+- Ad Integration: Monetag SDK
+- Hosting/Deployment: Vercel
+
+---
+
+**Visual & UI:**
+- Mobile-first design, dark mode support
+- Animated icons for each game mode:
+   - CrashMaster: Rising line with explosion
+   - MineQuest: Grid with mines and gems
+   - DiceHero: Colorful dice
+   - LimboLeap: Cartoon rocket/frog leaping upward
+- Floating coin balance display
+- Large Play and Bonus buttons
+- Color scheme: Coral red (#FF6B6B), turquoise (#4ECDC4), yellow (#FFE66D), dark blue (#1A1A2E), white (#FFFFFF)
+
+---
+
+**User Flow:**
+1. User starts the bot. Main menu offers mini-games and bonuses.
+2. User plays any game, earning tokens for success.
+3. After each game, “Watch Ad to get more Coins” option appears (Monetag integration).
+4. Leaderboard highlights top 100 players. Referral invites award extra coins.
+5. Weekly prize draws/redeem options explained in user profile.
+
+---
+
+**Monetization:**
+- Monetag rewarded video ads after gameplay or hourly in the task section
+- CPM target of $5
+- Users earn coins without mandatory ad views, just opt-in
+
+---
+
+**Deployment:**
+1. Deploy frontend on Vercel, backend on Render
+2. Configure Telegram bot webhook and commands (@BotFather)
+3. All configuration in .env (see below)
+
+---
+
+**Environment Variables (.env template):**
+TELEGRAM_BOT_TOKEN=your_bot_token_from_botfather
+MONETAG_ZONE_ID=your_monetag_zone_id
+MONETAG_SDK_URL=your_monetag_sdk_url
+DATABASE_URL=your_database_connection_string
+
+---
+
+**Extras:**
+- Generate and use flat, colorful PNG/SVG icons for: CrashMaster, MineQuest, DiceHero, LimboLeap, coins, leaderboard, referral star
+- Add brief onboarding/tutorial for first-time users
+- Send push notifications (daily bonus reminders)
+- Include achievement badge system
+
+---
+
+**Security & Docs:**
+- Provide clear documentation for: getting bot token, Monetag setup, database setup, deployment
+- Secure all user data
+- Rate limit API
+- Use standard error handling
+
+---
+
+**Success Criteria:**
+- App loads quickly (<3 seconds on mobile)
+- No forced ads
+- Token earnings, leaderboard, profiles, daily bonuses all work
+- Withdrawals/prizes are smooth
+- Easy maintenance and scaling
+
+---
+
+**Instructions to TRAE IDE:**
+I have no coding experience and no assets. Please:
+- Build everything from scratch using AI
+- Generate all UI graphics and design assets
+- Write complete README and setup docs
+- Make the app polished, professional, and scalable
+- Use only the info above—don’t ask for files or code from me.
+
+---
+
+**Proceed to build "TokenRush" Telegram Mini App with the above requirements!**

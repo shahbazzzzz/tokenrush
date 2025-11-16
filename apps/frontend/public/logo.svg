@@ -1,0 +1,24 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FF6B6B" />
+      <stop offset="50%" stopColor="#4ECDC4" />
+      <stop offset="100%" stopColor="#FFE66D" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Coin shape -->
+  <circle cx="60" cy="60" r="45" fill="url(#logoGradient)" />
+  
+  <!-- Inner coin design -->
+  <circle cx="60" cy="60" r="35" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.3" />
+  
+  <!-- T letter for TokenRush -->
+  <path d="M 40 40 L 80 40 M 60 40 L 60 80" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Sparkles -->
+  <circle cx="25" cy="25" r="2" fill="#FFE66D" />
+  <circle cx="95" cy="30" r="2" fill="#4ECDC4" />
+  <circle cx="90" cy="90" r="2" fill="#FF6B6B" />
+  <circle cx="30" cy="95" r="2" fill="#FFE66D" />
+</svg>
